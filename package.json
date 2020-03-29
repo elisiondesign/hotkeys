@@ -1,5 +1,5 @@
 {
-  "name": "hotkeys-js",
+  "name": "@elisiondesign/hotkeys",
   "description": "A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.",
   "version": "3.7.6",
   "main": "index.js",

@@ -1,5 +1,5 @@
 /*!
- * hotkeys-js v3.7.6
+ * @elisiondesign/hotkeys v3.7.6
  * A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.
  * 
  * Copyright (c) 2020 kenny wong <wowohoo@qq.com>
@@ -171,16 +171,19 @@
   // hotkey is effective only when filter return true
 
 
-  function filter(event) {
-    var target = event.target || event.srcElement;
-    var tagName = target.tagName;
-    var flag = true; // ignore: isContentEditable === 'true', <input> and <textarea> when readOnly state is false, <select>
-
-    if (target.isContentEditable || (tagName === 'INPUT' || tagName === 'TEXTAREA') && !target.readOnly) {
-      flag = false;
-    }
-
-    return flag;
+  function filter() {
+    // const target = event.target || event.srcElement;
+    // const { tagName } = target;
+    // let flag = true;
+    // // ignore: isContentEditable === 'true', <input> and <textarea> when readOnly state is false, <select>
+    // if (
+    //   target.isContentEditable
+    //   || ((tagName === 'INPUT' || tagName === 'TEXTAREA') && !target.readOnly)
+    // ) {
+    //   flag = false;
+    // }
+    // return flag;
+    return true;
   } // 判断摁下的键是否为某个键，返回true或者false
 
 
